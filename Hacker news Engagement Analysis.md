@@ -15,18 +15,14 @@ Since the posts are dated in the Eastern Time Zone, the analysis is conducted af
 ## Posts are categorized into:
 
 + Ask HN : Users ask the community a specific question
-<p>&nbsp;</p>
 + Show HN : Users show their projects, products, website developed or things that are interesting to the Hacker news community
-<p>&nbsp;</p>
 + Other HN:  The posts that are not provided with Show HN or Ask HN will fall into the other HN category
 
 
 ## Goals: 
 
 + To examine how engaged users are in the Hacker News community
-<p>&nbsp;</p>
 + To identify the times of day when user activity increases or declines
-<p>&nbsp;</p>
 + The optimal time to pitch posts for maximum reach and to determine whether Ask posts or Show posts have the greatest reach in the community
 
 #### Loading the data into Pandas dataframe:
@@ -156,7 +152,6 @@ Other_HN = df[~df['title'].str.startswith('Ask HN') & ~df['title'].str.startswit
 ## Findings:  Ask_HN post VS Show_HN posts
 
 + The number of Show posts (10,150) is higher compared to the number of Ask posts (9,122), yet the comments are more numerous on Ask posts
-<p>&nbsp;</p>
 + On average, Ask_HN posts receive 10.41 comments per post, while Show_HN posts receive only 4.89 comments. This suggests that people are more inclined to engage when the post is framed as a question
 
 
@@ -301,9 +296,7 @@ Other_HN['Day of the week'] = Other_HN['created_at'].dt.day_name()
 ## Findings: Ask_HN posts
 
 + Based on the correlation between `created_at_hour`, `Total posts`, and `Total comments`, it is clear that the number of posts strongly correlates with the hour of creation(0.628457). This suggests that the time of day influences the number of posts made. Meanwhile, Total comments shows a strong correlation with Total posts(0.674450), indicating that as the number of posts increases, the number of comments tends to increase as well. However, `created_at_hour` does not influence `Total comments` as much as `Total posts`; their correlation is relatively low (0.261360).This suggests that the time of day does not influences the number of comments made for the Ask_posts
-<p>&nbsp;</p>
 + Comments and posts peak at 14:00. Specifically, this indicates that user activity is high between 13:00 and 14:00. Since users are in different time zones, the period covers most time zones' lunchtime. 
-<p>&nbsp;</p>
 + These times correspond to when people are likely having lunch (12:00 to 13:00)
 
 ## Ask _HN Analysis: No.of.comments and posts per hour 
@@ -458,9 +451,7 @@ plt.show()
 ## Findings: Show_HN posts 
 
 + Based on the correlation between `created_at_hour`, `Total posts`, and `Total comments`, it is clear that the number of posts and comments strongly correlates with the hour of creation. This suggests that the time of day influences the number of posts and comments made. Meanwhile, Total comments shows a strong correlation with Total posts(0.945513), indicating that as the number of posts increases, the number of comments tends to increase as well for Show Posts
-<p>&nbsp;</p>
 + Show post data shows higher user activity (in terms of posts) compared to community engagement (in terms of comments)
-<p>&nbsp;</p>
 + User activity for 'Show' posts is significantly higher between 11:00 and 19:00. These times correspond to when people are likely having lunch, winding down at the end of the workday (14:00 to 15:00), and relaxing after dinner (15:00 to 16:00). Additionally, since users are in various time zones, this range covers most time zones' after work hours
 
 ## Show_HN Analysis: No.of.comments and posts per hour 
@@ -625,7 +616,7 @@ plt.show()
 
 
     
-![png](output_50_0.png)
+![png]()
     
 
 
@@ -634,19 +625,13 @@ plt.show()
 
 + Show_HN:
      + Users are active throughout the week from Monday to Friday between 11:00 & 17:00 covering most time zones lunch and after work hours
-<p>&nbsp;</p>
      + Fridays at 17:00 people were burning their fuel around the dinner time compared to the rest of the days or weekends
-<p>&nbsp;</p>
 + Ask_HN
     + Users are active from Monday to Friday at 14:00 covering most time zones lunch time. it has a pattern which is different from the show posts. There are no time ranges, but user activity is only during that time 
-<p>&nbsp;</p>    
     + Activities are very less on weekends
-<p>&nbsp;</p>    
 + Other_HN
     + These are the posts that does not fall into any of the above category or users might not have mentioned the category the post it belongs to
-<p>&nbsp;</p>  
     + it has a similar pattern to show posts.Users are active from Monday to Friday between 11:00 & 17:00
-<p>&nbsp;</p>    
     + Activities are very less on weekends
 
 
@@ -782,11 +767,7 @@ plt.show()
 ## Conclusion
 
 + In terms of total comments and posts, the number of Show posts (10,150) is higher compared to the number of Ask posts (9,122). However, comments are more numerous on Ask posts.
-<p>&nbsp;</p>
 + Users are active between lunch and dinner hours for Show_HN. Activity is generally high towards the end of the day. In contrast, users are active only at 14:00 for Ask_HN. There is less weekend activity for both Ask and Show posts.
-<p>&nbsp;</p>
 + Ask posts receive more user engagement compared to Show posts, as people are more inclined to answer questions when prompted rather than sharing a product, document, or website and asking for opinions.
-<p>&nbsp;</p>
 + According to the FAQ section on the Hacker News site, posts that users find interesting and believe add value to the community are upvoted and remain on the top 30 list.
-<p>&nbsp;</p>
 + If a user is posting an Ask post, they should aim to do so right before lunchtime. For Show posts, it is best to post closer to lunchtime or before dinner to maximize community reach.
