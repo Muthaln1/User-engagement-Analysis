@@ -616,7 +616,7 @@ plt.show()
 
 
     
-![png]()
+![png](https://github.com/Muthaln1/User-engagement-Analysis/blob/main/Total%20comments%20Vs%20Total%20Posts%20Show_HN.png)
     
 
 
@@ -677,7 +677,7 @@ plt.show()
 
 
     
-![png](output_55_0.png)
+![png](https://github.com/Muthaln1/User-engagement-Analysis/blob/main/Show%20posts%20Heatmap.png)
     
 
 
@@ -719,7 +719,7 @@ plt.show()
 
 
     
-![png](output_58_0.png)
+![png](https://github.com/Muthaln1/User-engagement-Analysis/blob/main/Ask%20posts%20HEatmap.png)
     
 
 
@@ -760,7 +760,7 @@ plt.show()
 
 
     
-![png](output_61_0.png)
+![png](https://github.com/Muthaln1/User-engagement-Analysis/blob/main/Other%20posts%20Heatmap.png)
     
 
 
